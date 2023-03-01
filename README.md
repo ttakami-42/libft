@@ -56,7 +56,7 @@ Those commands will add _libft.a_ to your __Libft__ directory.
 	ft_strstr     | string.h                    | None
 	ft_strnstr    | string.h                    | None
 	ft_strncmp    | string.h                    | None
-	ft_atoi       | string.h                    | None
+	ft_atoi       | stdlib.h                    | None
 	ft_calloc     | stdlib.h                    | malloc
 
 > **Warning**
