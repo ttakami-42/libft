@@ -56,7 +56,6 @@ SRCSB	=   ft_lstnew.c \
 			ft_lstclear.c \
 			ft_lstiter.c \
 			ft_lstmap.c
-
 OBJDIR	= obj
 OBJS	= $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 OBJSB	= $(addprefix $(OBJDIR)/, $(SRCSB:.c=.o))
