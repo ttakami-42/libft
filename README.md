@@ -59,14 +59,11 @@ Those commands will add _libft.a_ to your __Libft__ directory.
 	ft_atoi       | string.h                    | None
 	ft_calloc     | stdlib.h                    | malloc
 
-**Warning**
+> **Warning**
 Some of the functions' prototypes you have to redo use the restrict qualifier. This keyword is part of the c99 standard. It is therefore forbidden to include it in your own prototypes and to compile your code with the `-std=c99` flag.
 
 ### Additional funcs
 * In this part, you must develop a set of functions that are either not in the libc, or that are part of it but in a different form.
-
-**Note**
-* Some of the following functions can be useful for writing the functions of Part 1.
 
 	function name | Description | external func
 	:------------ | :---------- | :-----------:
@@ -82,6 +79,8 @@ Some of the functions' prototypes you have to redo use the restrict qualifier. T
 	ft_putendl_fd | Outputs the string given as a parameter to the given file descriptor followed by a newline. | write
 	ft_putnbr_fd  | Outputs the integer given as a parameter to the given file descriptor. | write
 
+> **Note**
+*Some of the following functions can be useful for writing the functions of Part 1.
 ## Bonus requirement
 * Functions to manipulate memory and strings are very useful. But you will soon discover that manipulating lists is even more useful. 
 
