@@ -6,10 +6,10 @@ At _42_, students are not allowed to use standard C functions. Therefore, they m
 
 ## Usage
 
-		make
+	make
 without bonus functions.
 
-		make bonus
+	make bonus
 to compile with bonuses.
 
 This will add _libft.a_ to your __Libft__ directory.
