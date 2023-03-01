@@ -89,11 +89,13 @@ Some of the functions' prototypes you have to redo use the restrict qualifier. T
 
 _You have to use the following structure to represent a node of your list. Add its declaration to your libft.h file:_
 
+```c
 	typedef struct s_list
 	{
 		void		*content;
 		struct s_list	*next;
 	}			t_list;
+```
 
 * The members of the t_list struct are:
 	* content: The data contained in the node. void * allows storing any kind of data.
@@ -102,8 +104,10 @@ _You have to use the following structure to represent a node of your list. Add i
 
 ### Bonus funcs
 
-	function name | Description | external func
-	:------------ | :---------- | :-----------:
+* _Boys will Be Boys, but..._
+
+	function name   | Description | external func
+	:-------------- | :---------- | :-----------:
 	ft_lstnew       | Allocates (with malloc) and returns a new node. | malloc
 	ft_lstadd_front | Adds the node ’new’ at the beginning of the list. | None
 	ft_lstsize      | Counts the number of nodes in a list. | None
@@ -114,4 +118,4 @@ _You have to use the following structure to represent a node of your list. Add i
 	ft_lstiter      | Iterates the list and applies the function on the content of each node. | None
 	ft_lstmap       | Iterates the list and applies the function on the content of each node. This function takes the addresses of two functions as args. | malloc, free
 
-_Boys will Be Boys, but..._
+* _Girls will Be Women._
