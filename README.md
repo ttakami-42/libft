@@ -38,6 +38,6 @@ This will add _libft.a_ to your __Libft__ directory.
 ``` typedef struct s_list<br>{<br>void *content;<br>struct s_list *next;<br>} t_list; ```
 
 * The members of the t_list struct are:
- * content: The data contained in the node. void * allows storing any kind of data.
- * next: The address of the next node, or NULL if the next node is the last one.
+	* content: The data contained in the node. void * allows storing any kind of data.
+	* next: The address of the next node, or NULL if the next node is the last one.
 * In your Makefile, add a make bonus rule to add the bonus functions to your libft.a.
