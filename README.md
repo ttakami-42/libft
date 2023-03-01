@@ -90,11 +90,11 @@ Some of the functions' prototypes you have to redo use the restrict qualifier. T
 _You have to use the following structure to represent a node of your list. Add its declaration to your libft.h file:_
 
 ```c
-	typedef struct s_list
-	{
-		void		*content;
-		struct s_list	*next;
-	}			t_list;
+typedef struct s_list
+{
+	void		*content;
+	struct s_list	*next;
+}			t_list;
 ```
 
 * The members of the t_list struct are:
