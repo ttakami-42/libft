@@ -35,7 +35,7 @@ This will add _libft.a_ to your __Libft__ directory.
 * Functions to manipulate memory and strings are very useful. But you will soon discover that manipulating lists is even more useful. 
 * You have to use the following structure to represent a node of your list. Add its declaration to your libft.h file:
 
-```typedef struct s_list<br>{<br>void *content;<br>struct s_list *next;<br>} t_list;```
+``` typedef struct s_list<br>{<br>void *content;<br>struct s_list *next;<br>} t_list; ```
 
 * The members of the t_list struct are:
  * content: The data contained in the node. void * allows storing any kind of data.
