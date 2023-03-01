@@ -14,12 +14,10 @@ __This is the first task for 42 common core circle.__
 
 ## Usage
 
-	make
-without bonus functions.
-
-
-	make bonus
-to compile with bonuses.
+```sh
+make         #without bonus funcs.
+make bonus   #to compile with bonus.
+```
 
 Those commands will add _libft.a_ to your __Libft__ directory.
 ## Requirement
