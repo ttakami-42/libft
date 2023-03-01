@@ -106,13 +106,13 @@ typedef struct s_list
 	function name   | Description | external func
 	:-------------- | :---------- | :-----------:
 	ft_lstnew       | Allocates (with malloc) and returns a new node. | malloc
-	ft_lstadd_front | Adds the node ’new’ at the beginning of the list. | None
+	ft_lstadd_front | Adds the node at the beginning of the list. | None
 	ft_lstsize      | Counts the number of nodes in a list. | None
 	ft_lstlast      | Returns the last node of the list. | None
-	ft_lstadd_back  | Adds the node ’new’ at the end of the list. | None
-	ft_lstdelone    | Takes as a parameter a node and frees the memory of the node’s content using the function given as a parameter and free the node. The memory of ’next’ must not be freed. | None
+	ft_lstadd_back  | Adds the node at the end of the list. | None
+	ft_lstdelone    | Takes as a parameter a node and frees the memory of the node’s content using the function given as a parameter and free the node. The memory of `next` must not be freed. | None
 	ft_lstclear     | Deletes and frees the given node and every successor of that node, using the function given as a parameter and free. Finally, the pointer to the list must be set to NULL. | free
 	ft_lstiter      | Iterates the list and applies the function on the content of each node. | None
-	ft_lstmap       | Iterates the list and applies the function on the content of each node. This function takes the addresses of two functions as args. | malloc, free
+	ft_lstmap       | Iterates the list and applies the function on the content of each node. This function takes the addresses of two other functions as arguments. | malloc, free
 
 * _Girls will Be Women._
