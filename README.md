@@ -29,13 +29,17 @@ This will add _libft.a_ to your __Libft__ directory.
 * To begin, you must redo a set of functions from the libc. Your functions will have the same prototypes and implement the same behaviors as the originals. They must comply with the way they are defined in their man. The only difference will be their names. They will begin with the _ft\__ prefix. For instance, strlen becomes _ft\_strlen_.
 
 !!! Warning
-	Some of the functions' prototypes you have to redo use the restrict qualifier. This keyword is part of the c99 standard. It is therefore forbidden to include it in your own prototypes and to compile your code with the -std=c99 flag.
+ Some of the functions' prototypes you have to redo use the restrict qualifier. This keyword is part of the c99 standard. It is therefore forbidden to include it in your own prototypes and to compile your code with the -std=c99 flag.
 
 ## Bonus requirement
 * Functions to manipulate memory and strings are very useful. But you will soon discover that manipulating lists is even more useful. 
 * You have to use the following structure to represent a node of your list. Add its declaration to your libft.h file:
 
-``` typedef struct s_list<br>{<br>void *content;<br>struct s_list *next;<br>} t_list; ```
+		typedef struct s_list
+		{
+			void *content;
+			struct s_list *next;
+		}	t_list;
 
 * The members of the t_list struct are:
 	* content: The data contained in the node. void * allows storing any kind of data.
