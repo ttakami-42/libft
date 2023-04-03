@@ -1,47 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttakami <ttakami@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/18 10:52:28 by ttakami           #+#    #+#             */
-/*   Updated: 2023/03/31 00:47:30 by ttakami          ###   ########.fr       */
+/*   Created: 2023/03/31 00:43:42 by ttakami           #+#    #+#             */
+/*   Updated: 2023/03/31 00:46:57 by ttakami          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_isoverflow(long *num, int is_neg, int c)
+static int	ft_isoverflow(long long *num, int is_neg, int c)
 {
 	long	cutoff;
 	int		cutlim;
 
 	if (is_neg)
 	{
-		cutoff = -(LONG_MIN / 10);
-		cutlim = -(LONG_MIN % 10);
+		cutoff = -(LLONG_MIN / 10);
+		cutlim = -(LLONG_MIN % 10);
 	}
 	else
 	{
-		cutoff = LONG_MAX / 10;
-		cutlim = LONG_MAX % 10;
+		cutoff = LLONG_MAX / 10;
+		cutlim = LLONG_MAX % 10;
 	}
 	if (*num > cutoff || (*num == cutoff && c > cutlim))
 	{
 		if (is_neg)
-			*num = LONG_MIN;
+			*num = LLONG_MIN;
 		else
-			*num = LONG_MAX;
+			*num = LLONG_MAX;
 		return (1);
 	}
 	return (0);
 }
 
-int	ft_atoi(const char *str)
+long	ft_atol(const char *str)
 {
-	long	num;
-	int		is_neg;
+	long long	num;
+	int			is_neg;
 
 	num = 0;
 	is_neg = 0;

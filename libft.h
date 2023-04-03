@@ -6,7 +6,7 @@
 /*   By: ttakami <ttakami@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 15:43:40 by ttakami           #+#    #+#             */
-/*   Updated: 2022/10/12 18:06:41 by ttakami          ###   ########.fr       */
+/*   Updated: 2023/03/31 00:48:11 by ttakami          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 void	ft_bzero(void *s, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
@@ -45,6 +46,7 @@ void	*ft_memchr(const void *s, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
 void	*ft_calloc(size_t num, size_t size);
 char	*ft_strdup(const char *src);
 char	*ft_substr(const char *str, unsigned int start, size_t len);
